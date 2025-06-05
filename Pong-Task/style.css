@@ -1,24 +1,24 @@
-*{
+* {
     padding: 0;
     margin: 0;
     position: relative;
     box-sizing: border-box;
 }
 
-
-body{
+body {
     height: 100dvh;
     width: 100%;
     display: flex;
     align-items: center;
     flex-direction: column;
     justify-content: center;
-    background: url('bg.png');
+    background: url("bg.png");
     background-size: cover;
 }
 
-#cnvs{
-    background: black;
+#cnvs {
+    background: rgba(37, 2, 35, 0.658);
     width: 90dvw;
     height: 80dvh;
+    border-radius: 20px;
 }

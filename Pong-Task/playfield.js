@@ -18,6 +18,7 @@ class Playfield {
         this.ball.playfield = this;
         this.draw();
         // \o/ fehlt hier was? hm... \o/
+        this.checkCollision(); // check for collisions
     }
 
     // ########### Methods ###########
@@ -39,7 +40,7 @@ class Playfield {
     checkCollision() {
         setInterval(() => {
             // \o/ hier fehlen Bedingungen die von einem Objekts ausgehen <ball> \o/
-            if (?? || ??) { 
+            if (this.ball.isColliding(this.player1) || this.ball.isColliding(this.player2)) { // check if ball collides with player1 or player2
                 this.ball.changeDirection();
                 this.ball.ponged = true;
                 setTimeout(() => {
